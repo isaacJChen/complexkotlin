@@ -6,9 +6,12 @@ println("UW Complex Kotlin homework")
 // the final string should look like FIZZBUZZFIZZFIZZBUZZFIZZFIZZBUZZ
 //
 var mapFoldResults = ""
-val numbers = arrayOf(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
+val numbers = arrayOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
 mapFoldResults = numbers.map{
-  if (it%3 == 0 && it%5 == 0) {
+  if (it == 0) {
+    ""
+  }
+  else if (it%3 == 0 && it%5 == 0) {
     "FIZZBUZZ"
   } else if (it%3 == 0) {
     "FIZZ"
@@ -79,8 +82,6 @@ class Command(val prompt: String) {
     return prompt+message
   }
 }
-
-
 
 
 // ================================
